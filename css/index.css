@@ -1,3 +1,4 @@
+@mobile (max-width:500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -224,14 +225,75 @@ header nav a {
   }
 }
 .top-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-bottom: 2px dashed lightgray;
+  margin-left: 20px;
+  padding: 20px;
 }
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
+  /* Full-width input fields */
+  /* Set a style for all buttons */
+  /* Extra styles for the cancel button */
+  /* Float cancel and signup buttons and add an equal width */
+  /* Add padding to container elements */
+  /* Clear floats */
+  /* Change styles for cancel button and signup button on extra small screens */
+}
+.footer input[type=text],
+.footer input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.footer input[type=text]:focus,
+.footer input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.footer hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.footer button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.footer button:hover {
+  opacity: 1;
+}
+.footer .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.footer .cancelbtn,
+.footer .signupbtn {
+  float: left;
+  width: 50%;
+}
+.footer .container {
+  padding: 16px;
+}
+.footer .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .footer .cancelbtn,
+  .footer .signupbtn {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .footer {
